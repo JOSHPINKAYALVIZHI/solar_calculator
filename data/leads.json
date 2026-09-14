@@ -1,0 +1,62 @@
+[
+  {
+    "id": "LEAD-1789375940974",
+    "name": "Joshpin kayalvizhi",
+    "mobile": "8248930835",
+    "email": "joshpinkayalvizhi1247@gmail.com",
+    "state": "Tamil Nadu",
+    "plantKW": 0,
+    "saveMonthly": 0,
+    "netInvestment": 0,
+    "method": "bill",
+    "createdAt": "2026-09-14T08:52:20.974Z"
+  },
+  {
+    "id": "LEAD-1789375743151",
+    "name": "Joshpin kayalvizhi",
+    "mobile": "8248930835",
+    "email": "joshpinkayalvizhi1247@gmail.com",
+    "state": "Tamil Nadu",
+    "plantKW": 0,
+    "saveMonthly": 0,
+    "netInvestment": 0,
+    "method": "bill",
+    "createdAt": "2026-09-14T08:49:03.151Z"
+  },
+  {
+    "id": "LEAD-1789375681221",
+    "name": "Joshpin kayalvizhi",
+    "mobile": "8248930835",
+    "email": "joshpinkayalvizhi1247@gmail.com",
+    "state": "Tamil Nadu",
+    "plantKW": 0,
+    "saveMonthly": 0,
+    "netInvestment": 0,
+    "method": "bill",
+    "createdAt": "2026-09-14T08:48:01.221Z"
+  },
+  {
+    "id": "LEAD-1789375448232",
+    "name": "Dr. Swaminathan",
+    "mobile": "9159950009",
+    "email": "swaminathan@example.com",
+    "state": "Tamil Nadu",
+    "plantKW": 10,
+    "saveMonthly": 0,
+    "netInvestment": 0,
+    "method": "bill",
+    "createdAt": "2026-09-14T08:44:08.232Z"
+  },
+  {
+    "id": "LEAD-1789374906539",
+    "name": "Rajesh Kumar",
+    "mobile": "9876543210",
+    "email": "rajesh@example.com",
+    "state": "Gujarat",
+    "plantKW": 5.5,
+    "saveMonthly": 0,
+    "netInvestment": 0,
+    "method": "bill",
+    "createdAt": "2026-09-14T08:35:06.539Z"
+  }
+]
