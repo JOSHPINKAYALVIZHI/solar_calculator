@@ -7,7 +7,6 @@ import ResultsDashboard from './components/ResultsDashboard';
 import ApplianceCalculator from './components/ApplianceCalculator';
 import SolarTips from './components/SolarTips';
 import ProductCatalog from './components/ProductCatalog';
-import ReviewsAndFAQ from './components/ReviewsAndFAQ';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -95,11 +94,6 @@ export default function App() {
 
           {activeTab === 'products' && (
             <ProductCatalog />
-          )}
-
-          {/* Social Proof & FAQs on Main Calculator View */}
-          {activeTab === 'calculator' && (
-            <ReviewsAndFAQ />
           )}
         </main>
 
