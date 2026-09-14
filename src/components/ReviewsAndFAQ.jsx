@@ -39,7 +39,7 @@ export default function ReviewsAndFAQ() {
         </div>
 
         <div className="text-xs text-blue-200/80 leading-relaxed border-t border-blue-800/80 pt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-          <span>Headquarters: {COMPANY_DETAILS.registeredAddress}</span>
+          <span>Coimbatore • Tamil Nadu • India</span>
           <span className="font-bold text-white flex items-center gap-1">
             <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
             Active Entity (Inc. 2017)
