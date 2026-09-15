@@ -322,69 +322,6 @@ export default function ResultsDashboard({ results, resultsRef }) {
         </div>
       </div>
 
-      {/* SECTION 3: SYSTEM COST & SUBSIDY */}
-      <div className="space-y-3">
-        <div className="flex items-center gap-3 text-xs font-bold text-slate-400 uppercase tracking-widest">
-          <Tag className="w-4 h-4 text-blue-600" />
-          <span>PROJECT COST & SUBSIDY BREAKDOWN</span>
-          <div className="flex-1 h-px bg-slate-200" />
-        </div>
-
-        <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200/80 space-y-6 card-print">
-          <div className="flex items-center gap-2.5 text-slate-900 font-bold text-base font-outfit">
-            <Calculator className="w-5 h-5 text-blue-600" />
-            <span>Investment Breakdown</span>
-          </div>
-
-          <div className="space-y-3.5">
-            <div className="flex justify-between items-center text-sm font-semibold text-slate-700 py-1 border-b border-slate-100 pb-3">
-              <span>Gross System Cost ({isSubsidy ? 'DCR Solar Panels' : 'Non-DCR Solar Panels'})</span>
-              <span className="text-base font-extrabold text-slate-900 font-outfit">{fmtLakh(grossCost)}</span>
-            </div>
-
-            {customerType === '2' && isSubsidy && subsidyAmount > 0 ? (
-              <div className="flex justify-between items-center text-sm font-bold text-blue-700 py-1 border-b border-slate-100 pb-3">
-                <span className="flex items-center gap-2">
-                  PM Surya Ghar Govt. Subsidy
-                  <span className="bg-blue-100 text-blue-900 text-[11px] px-2 py-0.5 rounded-full font-extrabold">
-                    Subsidy Tier
-                  </span>
-                </span>
-                <span className="text-base font-extrabold font-outfit text-emerald-600">− ₹{fmt(subsidyAmount)}</span>
-              </div>
-            ) : null}
-
-            <div className="flex justify-between items-center text-base font-extrabold text-slate-900 bg-emerald-50/80 p-4 rounded-2xl border border-emerald-200/70 mt-2">
-              <span className="text-slate-900">Net System Investment</span>
-              <span className="text-2xl font-black text-emerald-700 font-outfit">₹{fmt(netInvestment)}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* DUAL CARDS: PAYBACK & ROI */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/80 text-center space-y-2 card-print">
-          <div className="w-10 h-10 bg-blue-50 text-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-1">
-            <Clock className="w-5 h-5" />
-          </div>
-          <div className="text-4xl font-black text-slate-900 font-outfit">
-            {paybackYears} <span className="text-xl font-bold text-slate-500">Yrs</span>
-          </div>
-          <div className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">Simple Payback Period</div>
-        </div>
-
-        <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/80 text-center space-y-2 card-print">
-          <div className="w-10 h-10 bg-blue-50 text-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-1">
-            <TrendingUp className="w-5 h-5" />
-          </div>
-          <div className="text-4xl font-black text-blue-700 font-outfit">
-            {roiPct}%
-          </div>
-          <div className="text-xs font-extrabold text-slate-500 uppercase tracking-wider">Annual Return on Investment</div>
-        </div>
-      </div>
-
       {/* SECTION 4: ENVIRONMENTAL IMPACT */}
       <div className="space-y-3">
         <div className="flex items-center gap-3 text-xs font-bold text-slate-400 uppercase tracking-widest">

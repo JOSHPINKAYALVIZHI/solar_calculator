@@ -349,40 +349,6 @@ export default function SolarCalculator({ onCalculate, calcRef }) {
                 </select>
               </div>
             </div>
-
-            {/* PM Surya Ghar Subsidy Toggle (Residential only) */}
-            {customerType === '2' && (
-              <div className="bg-blue-50/80 rounded-2xl p-4 border border-blue-200/70 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0">
-                    <Tag className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-blue-950">PM Surya Ghar Subsidy Scheme</div>
-                    <div className="text-xs text-blue-800/90 font-medium">
-                      National Rooftop Solar Subsidy (Up to ₹78,000 credit)
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex items-center bg-white rounded-xl p-1 border border-blue-200 shrink-0">
-                  <button
-                    type="button"
-                    onClick={() => setIsSubsidy(true)}
-                    className={`px-3 py-1.5 text-xs font-bold rounded-lg transition ${isSubsidy ? 'bg-blue-700 text-white shadow-sm' : 'text-slate-600 hover:text-blue-900'}`}
-                  >
-                    With Subsidy (DCR)
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setIsSubsidy(false)}
-                    className={`px-3 py-1.5 text-xs font-bold rounded-lg transition ${!isSubsidy ? 'bg-blue-700 text-white shadow-sm' : 'text-slate-600 hover:text-blue-900'}`}
-                  >
-                    No Subsidy
-                  </button>
-                </div>
-              </div>
-            )}
           </div>
 
           <div className="h-px bg-slate-100"></div>
