@@ -9,7 +9,7 @@ export default function Hero({ onScrollToCalc }) {
       <div className="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 rounded-full bg-blue-500/15 blur-3xl pointer-events-none animate-pulse-glow" />
       <div className="absolute bottom-0 left-0 -mb-16 -ml-16 w-80 h-80 rounded-full bg-indigo-500/15 blur-3xl pointer-events-none" />
 
-      <div className="max-w-5xl mx-auto text-center relative z-10">
+      <div className="max-w-6xl mx-auto text-center relative z-10">
         {/* Brand Tag Pill */}
         <div className="inline-flex items-center gap-2 bg-blue-900/80 backdrop-blur-md border border-blue-500/30 rounded-full px-4 py-1.5 mb-6 text-blue-200 text-xs font-semibold tracking-wide uppercase shadow-inner">
           <Sparkles className="w-4 h-4 text-blue-400" />
@@ -17,7 +17,7 @@ export default function Hero({ onScrollToCalc }) {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight font-outfit text-white mb-6 leading-tight">
+        <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight font-outfit text-white mb-6 leading-tight whitespace-nowrap overflow-x-auto max-w-full">
           Powering A Sustainable Future with{' '}
           <span className="bg-gradient-to-r from-blue-300 via-sky-200 to-white bg-clip-text text-transparent underline decoration-blue-400/50 underline-offset-8">
             JESUANS Solar
