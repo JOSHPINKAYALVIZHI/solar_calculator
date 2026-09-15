@@ -203,8 +203,9 @@ export default function SolarCalculator({ onCalculate, calcRef }) {
                     <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold text-lg">₹</span>
                     <input
                       type="number"
+                      min="0"
                       value={bill}
-                      onChange={(e) => setBill(Number(e.target.value))}
+                      onChange={(e) => setBill(Math.max(0, Number(e.target.value)))}
                       placeholder="e.g. 5000"
                       className="w-full bg-white border border-slate-300 rounded-xl pl-9 pr-24 py-3.5 text-slate-900 font-bold text-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition"
                     />
@@ -221,8 +222,9 @@ export default function SolarCalculator({ onCalculate, calcRef }) {
                   <div className="relative">
                     <input
                       type="number"
+                      min="0"
                       value={units}
-                      onChange={(e) => setUnits(Number(e.target.value))}
+                      onChange={(e) => setUnits(Math.max(0, Number(e.target.value)))}
                       placeholder="e.g. 600"
                       className="w-full bg-white border border-slate-300 rounded-xl pl-4 pr-28 py-3.5 text-slate-900 font-bold text-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition"
                     />
@@ -241,8 +243,9 @@ export default function SolarCalculator({ onCalculate, calcRef }) {
                       <div className="relative">
                         <input
                           type="number"
+                          min="0"
                           value={area}
-                          onChange={(e) => setArea(Number(e.target.value))}
+                          onChange={(e) => setArea(Math.max(0, Number(e.target.value)))}
                           placeholder="e.g. 500"
                           className="w-full bg-white border border-slate-300 rounded-xl pl-4 pr-24 py-3.5 text-slate-900 font-bold text-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition"
                         />
@@ -412,10 +415,10 @@ export default function SolarCalculator({ onCalculate, calcRef }) {
                     <input
                       type="number"
                       step="0.25"
-                      min="1"
+                      min="0.1"
                       max="30"
                       value={tariff}
-                      onChange={(e) => setTariff(Number(e.target.value))}
+                      onChange={(e) => setTariff(Math.max(0.1, Number(e.target.value)))}
                       className="w-full bg-white border border-slate-300 rounded-lg pl-6 pr-2 py-1.5 text-sm font-bold text-slate-900 text-center focus:outline-none focus:ring-2 focus:ring-blue-600"
                     />
                   </div>
